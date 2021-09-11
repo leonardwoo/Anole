@@ -19,7 +19,7 @@
   </ul>
 </main>
 
-<section>
+<section class="container mx-auto">
 <?php include('comments.php'); ?>
 </section>
 

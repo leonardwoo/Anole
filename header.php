@@ -35,3 +35,4 @@
     </ul>
   </nav>
 </header>
+<div class="main-body"> <!-- # main start -->

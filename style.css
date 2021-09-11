@@ -16,8 +16,8 @@
   --table-head-background-color: #E0E0E0;
   --table-body-even-background-color: #E0E0E0;
 
-  --code-block-background-color: #353535;
-  --code-block-color: #14DB78;
+  --code-block-background-color: #E0E0E0;
+  --code-block-color: #004D40;
 
   --footer-background-color: transparent;
   --footer-color: #212121;
@@ -78,6 +78,10 @@ header nav {
 
 ul li, ol li {
   display:inline;
+}
+
+.main-body {
+  min-height: 79vh;
 }
 
 main {

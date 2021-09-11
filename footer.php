@@ -1,4 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
+</div> <!-- # main end -->
 
 <footer id="footer" role="contentinfo">
     <p>Copyright &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.</p>
