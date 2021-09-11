@@ -33,7 +33,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <?php $this->pageNav(); ?>
 </div>
 
-<div class="sidebar_box">
+<div class="container mx-auto sidebar_box">
 <?php $this->need('sidebar.php'); ?>
 </div>
 

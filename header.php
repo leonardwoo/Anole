@@ -29,7 +29,6 @@
   </div>
   <nav>
     <ul class="nav_menu">
-      <li><a href="<?php $this->options->siteUrl(); ?>">主页</a></li>
       <?php $this->widget('Widget_Contents_Page_List')
                  ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
     </ul>
