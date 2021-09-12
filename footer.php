@@ -9,5 +9,6 @@
 
 <?php $this->footer(); ?>
 </div> <!-- # body end -->
+
 </body>
 </html>

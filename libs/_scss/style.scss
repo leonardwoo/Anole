@@ -168,6 +168,16 @@ code {
 	overflow-wrap: normal;
 	white-space: pre-wrap;
 }
+.comment_form {
+	.text {
+		width: 400px;
+	}
+	textarea {
+		resize: none !important;
+		width: 400px;
+		height: 200px;
+	}
+}
 .sidebar_box {
 	font-size: 0.8rem;
 	display: flex;

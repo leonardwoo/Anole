@@ -10,4 +10,12 @@
   </article>
 </main>
 
+<section class="container mx-auto">
+<?php include('comments.php'); ?>
+</section>
+
+<div class="container mx-auto sidebar_box">
+<?php $this->need('sidebar.php'); ?>
+</div>
+
 <?php $this->need('footer.php'); ?>

@@ -13,11 +13,11 @@
             'author'    =>  _t('%s 发布的文章')
         ), '', ' | '); ?><?php $this->options->title(); ?></title>
 
-    <link rel="proload" href="<?php $this->options->themeUrl('libs/modern-normalize.min.css'); ?>" as="style">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('libs/modern-normalize.min.css'); ?>">
+    <link rel="proload" href="<?php $this->options->themeUrl('libs/modern-normalize.min.css'); ?>" as="style" />
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('libs/modern-normalize.min.css'); ?>" />
 
-    <link rel="proload" href="<?php $this->options->themeUrl('style.css'); ?>" as="style">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+    <link rel="proload" href="<?php $this->options->themeUrl('style.css'); ?>" as="style" />
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>" />
 
     <?php $this->header(); ?>
 </head>
