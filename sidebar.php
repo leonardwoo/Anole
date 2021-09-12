@@ -19,10 +19,10 @@
 <div class="">
 <ul>
     <?php if($this->user->hasLogin()): ?>
-        <li><a href="<?php $this->options->index('admin/'); ?>">进入后台 (<?php $this->user->screenName(); ?>)</a></li>
-        <li><a href="<?php $this->options->index('action/logout'); ?>">登出</a></li>
+        <li><a href="<?php $this->options->adminUrl(); ?>">进入后台 (<?php $this->user->screenName(); ?>)</a></li>
+        <li><a href="<?php $this->options->logoutUrl(); ?>">登出</a></li>
     <?php else: ?>
-        <li><a href="<?php $this->options->adminUrl('login'); ?>">登录</a></li>
+        <li><a href="<?php $this->options->adminUrl('login.php'); ?>">登录</a></li>
     <?php endif; ?>
 </ul>
 </div>

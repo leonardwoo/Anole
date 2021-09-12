@@ -11,10 +11,10 @@
             'search'    =>  _t('包含关键字 %s 的文章'),
             'tag'       =>  _t('标签 %s 下的文章'),
             'author'    =>  _t('%s 发布的文章')
-        ), '', ' - '); ?><?php $this->options->title(); ?></title>
+        ), '', ' | '); ?><?php $this->options->title(); ?></title>
 
-    <link rel="proload" href="<?php $this->options->themeUrl('libs/base.css'); ?>" as="style">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('libs/base.css'); ?>">
+    <link rel="proload" href="<?php $this->options->themeUrl('libs/modern-normalize.min.css'); ?>" as="style">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('libs/modern-normalize.min.css'); ?>">
 
     <link rel="proload" href="<?php $this->options->themeUrl('style.css'); ?>" as="style">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
@@ -28,10 +28,12 @@
      <p><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></p>
   </div>
   <nav>
-    <ul class="nav_menu">
+    <div>
+      <ul class="nav_menu">
       <?php $this->widget('Widget_Contents_Page_List')
                  ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
-    </ul>
+      </ul>
+    </div>
   </nav>
 </header>
 <div class="main-body"> <!-- # main start -->
