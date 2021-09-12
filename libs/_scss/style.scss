@@ -85,7 +85,7 @@ ol {
 	}
 }
 .main-body {
-	min-height: 79vh;
+	min-height: 75vh;
 }
 main {
 	margin-bottom: 2rem;
@@ -191,4 +191,8 @@ footer {
 			text-decoration: underline;
 		}
 	}
+}
+
+.error-page .post-title {
+	text-align: center;
 }
