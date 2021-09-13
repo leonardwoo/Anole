@@ -4,8 +4,8 @@
  * 
  * @package Anole Theme
  * @author Leonard Woo
- * @version 1.0
- * @link https://l6d.me
+ * @version 1.1
+ * @link https://github.com/leonardwoo/anole
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

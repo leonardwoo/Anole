@@ -1,66 +1,84 @@
 html {
 	font-size: 14px;
 }
+
 body {
-	padding: 0;
+	padding    : 0;
 	font-weight: 300;
-	font-size: 1rem;
+	font-size  : 1rem;
 	line-height: 1.15;
-	width: 100%;
+	width      : 100%;
 }
+
 ul {
-	margin: 0;
+	margin : 0;
 	padding: 0;
 }
+
 ol {
-	margin: 0;
+	margin : 0;
 	padding: 0;
 }
+
 h1 {
 	font-weight: 700;
-	font-size: 2.75rem;
+	font-size  : 2.75rem;
 }
+
 h2 {
 	font-weight: 600;
-	font-size: 2.5rem;
+	font-size  : 2.5rem;
 }
+
 h3 {
 	font-weight: 500;
-	font-size: 2.25rem;
+	font-size  : 2.25rem;
 }
+
 h4 {
 	font-weight: 500;
-	font-size: 2rem;
+	font-size  : 2rem;
 }
+
 h5 {
 	font-weight: 500;
-	font-size: 1.75rem;
+	font-size  : 1.75rem;
 }
+
 h6 {
 	font-weight: 400;
-	font-size: 1.5rem;
-	margin: 1rem 0;
+	font-size  : 1.5rem;
+	margin     : 1rem 0;
 }
+
 p {
 	padding: 0;
 	display: block;
 }
+
 nav {
 	padding: 0;
 	display: block;
 }
+
 .container {
 	width: 100%;
 }
-button, input, optgroup, select, textarea {
-    padding: 0;
-    line-height: inherit;
-    color: inherit;
-	outline: 0;
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	padding         : 0;
+	line-height     : inherit;
+	color           : inherit;
+	outline         : 0;
 	background-color: white;
 }
+
 .mx-auto {
-	margin-left: auto;
+	margin-left : auto;
 	margin-right: auto;
 }
 
@@ -68,67 +86,81 @@ button, input, optgroup, select, textarea {
 	html {
 		font-size: 8px;
 	}
+
 	.container {
 		max-width: 615px;
 	}
 }
+
 @media only screen and (min-width: 768px) {
 	html {
 		font-size: 12px;
 	}
+
 	.container {
 		max-width: 722px;
 	}
 }
+
 @media only screen and (min-width: 1024px) {
 	html {
 		font-size: 14px;
 	}
+
 	.container {
 		max-width: 943px;
 	}
 }
+
 @media only screen and (min-width: 1280px) {
 	html {
 		font-size: 16px;
 	}
+
 	.container {
 		max-width: 1152px;
 	}
 }
+
 @media only screen and (min-width: 1536px) {
 	.container {
 		max-width: 1352px;
 	}
 }
+
 @media only screen and (min-width: 1920px) {
 	.container {
 		max-width: 1652px;
 	}
 }
+
 @media only screen and (min-width: 2560px) {
 	html {
 		font-size: 18px;
 	}
+
 	.container {
 		max-width: 2151px;
 	}
 }
 
-::before, ::after {
-	content: "";
-	box-sizing: border-box;
+::before,
+::after {
+	content     : "";
+	box-sizing  : border-box;
 	border-width: 0;
 	border-style: solid;
 	border-color: inherit;
 }
 
-::selection, ::-moz-selection {
+::selection,
+::-moz-selection {
 	background: black;
-	color: white;
+	color     : white;
 }
 
-::placeholder, ::-webkit-input-placeholder {
-	color: #9CA3AF;
+::placeholder,
+::-webkit-input-placeholder {
+	color  : #9CA3AF;
 	opacity: 0.7;
 }
