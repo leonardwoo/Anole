@@ -52,6 +52,13 @@ nav {
 .container {
 	width: 100%;
 }
+button, input, optgroup, select, textarea {
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+	outline: 0;
+	background-color: white;
+}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
