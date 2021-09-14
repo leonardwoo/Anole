@@ -20,9 +20,41 @@
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>" />
 
     <?php $this->header(); ?>
+
+    <style>
+.page-shade {
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+}
+.default-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 10%;
+  width: 80%;
+}
+  </style>
 </head>
 <body>
-  <div class=""> <!-- # body start -->
+  <noscript>
+    <div class="page-shade">
+      <div class="default-text">
+      <p>We've detected that JavaScript is disabled in your browser.You will not be able use this.</p><!-- en -->
+      <p>Hemos detectado que JavaScript está desactivado en su navegador. No podrá utilizarlo.</p><!-- es -->
+      <p>Nous avons détecté que JavaScript est désactivé dans votre navigateur. Vous ne pourrez pas l'utiliser.</p><!-- fr -->
+      <p>お使いのブラウザでJavaScriptが無効になっていることが検出されました。これは使用できません。</p><!-- ja -->
+      <p>귀하의 브라우저에서 JavaScript가 비활성화되어 있음을 감지했습니다.이 기능을 사용할 수 없습니다.</p><!-- ko -->
+      <p>我們檢測到您的瀏覽器禁用了JavaScript。您將無法使用它。</p><!-- zhTW -->
+      <p>我们检测到您的浏览器禁用了JavaScript。您将无法使用它。</p><!-- zhCN -->
+      </div>
+    </div>
+  </noscript>
+<div class=""> <!-- # body start -->
 <header>
   <div class="header_title">
      <p><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></p>
