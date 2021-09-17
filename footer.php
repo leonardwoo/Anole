@@ -7,8 +7,8 @@
     Theme <a href="https://github.com/leonardwoo/Anole">Anole</a> Design by <a href="https://l6d.me/">Leonard Woo</a></p>
 </footer>
 
-<?php $this->footer(); ?>
 </div> <!-- # body end -->
 
+<?php $this->footer(); ?>
 </body>
 </html>

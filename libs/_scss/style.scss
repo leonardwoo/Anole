@@ -234,7 +234,7 @@ pre {
   }
 }
 
-code {
+:not(pre) > code {
   background-color: var(--code-block-background-color);
   color           : var(--code-block-color);
   padding         : 0 .25rem;
