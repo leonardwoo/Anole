@@ -1,26 +1,55 @@
 @use 'base.scss';
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --global-background-color             : #FBFBFD;
+    --global-color                        : #263238;
+    --link-color                          : #263238;
+    --link-hover-background-color         : transparent;
+    --link-hover-color                    : #3c8baf;
+    --nav-link-hover-background-color     : #455A64;
+    --nav-link-hover-color                : #F5F5F5;
+    --page-nav-link-hover-color           : #FAFAFA;
+    --page-nav-link-hover-background-color: #455A64;
+    --table-head-background-color         : #E0E0E0;
+    --table-body-even-background-color    : #E0E0E0;
+    --code-block-background-color         : #E0E0E0;
+    --code-block-color                    : #004D40;
+    --comment-input-border-color          : #9E9E9E;
+    --comment-input-border-focus-color    : #3c8baf;
+    --footer-background-color             : transparent;
+    --footer-color                        : #212121;
+    --footer-link-color                   : #212121;
+    --footer-link-hover-color             : #616161;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --global-background-color             : #212121;
+    --global-color                        : #FAFAFC;
+    --link-color                          : #FAFAFC;
+    --link-hover-background-color         : transparent;
+    --link-hover-color                    : #18a7e9;
+    --nav-link-hover-background-color     : #26C6DA;
+    --nav-link-hover-color                : #424242;
+    --page-nav-link-hover-color           : #424242;
+    --page-nav-link-hover-background-color: #a7c8d8;
+    --table-head-background-color         : #424242;
+    --table-body-even-background-color    : #424242;
+    --code-block-background-color         : #424242;
+    --code-block-color                    : #70f3e8;
+    --comment-input-border-color          : #9E9E9E;
+    --comment-input-border-focus-color    : #14a0e0;
+    --footer-background-color             : transparent;
+    --footer-color                        : #FAFAFC;
+    --footer-link-color                   : #FAFAFC;
+    --footer-link-hover-color             : #B0B0B0;
+  }
+}
+
 :root {
-  --global-background-color             : #FBFBFD;
-  --global-color                        : #263238;
-  --link-color                          : #263238;
-  --link-hover-background-color         : transparent;
-  --link-hover-color                    : #3c8baf;
-  --nav-link-hover-background-color     : #455A64;
-  --nav-link-hover-color                : #F5F5F5;
-  --page-nav-link-hover-color           : #FAFAFA;
-  --page-nav-link-hover-background-color: #455A64;
-  --table-head-background-color         : #E0E0E0;
-  --table-body-even-background-color    : #E0E0E0;
-  --code-block-background-color         : #E0E0E0;
-  --code-block-color                    : #004D40;
-  --input-border-radius                 : 0.5rem;
-  --comment-input-border-color          : #9E9E9E;
-  --comment-input-border-focus-color    : #3c8baf;
-  --footer-background-color             : transparent;
-  --footer-color                        : #212121;
-  --footer-link-color                   : #212121;
-  --footer-link-hover-color             : #616161;
+  --input-border-radius: 0.5rem;
 }
 
 body {
