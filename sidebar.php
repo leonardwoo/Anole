@@ -1,5 +1,4 @@
-
-<?php //* ?>
+<?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div class="post_recent">
 <ul>
     <?php $this->widget('Widget_Contents_Post_Recent')
@@ -14,9 +13,7 @@
     </ul>
 </div>
 
-<?php //*/ ?>
-
-<div class="">
+<div class="blog_admin">
 <ul>
     <?php if($this->user->hasLogin()): ?>
         <li><a href="<?php $this->options->adminUrl(); ?>">进入后台 (<?php $this->user->screenName(); ?>)</a></li>

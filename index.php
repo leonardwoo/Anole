@@ -4,7 +4,7 @@
  * 
  * @package Anole Theme
  * @author Leonard Woo
- * @version 1.1
+ * @version 1.2
  * @link https://github.com/leonardwoo/Anole
  */
 
@@ -29,13 +29,15 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 <?php endwhile; ?>
 </main>
 
-<div class="page_box">
+<section class="page_box">
 <?php $this->pageNav(); ?>
-</div>
+</section>
 
-<div class="container mx-auto sidebar_box">
-<?php $this->need('sidebar.php'); ?>
-</div>
+<section class="sidebar_box">
+  <div class="container mx-auto sidebar">
+	  <?php $this->need('sidebar.php'); ?>
+	</div>
+</section>
 
 <?php
 $this->need('footer.php');

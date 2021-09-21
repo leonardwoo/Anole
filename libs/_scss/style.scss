@@ -6,6 +6,8 @@
   --link-color                          : #263238;
   --link-hover-background-color         : transparent;
   --link-hover-color                    : #3c8baf;
+  --header-background-color             : transparent;
+  --header-color                        : inherit;
   --nav-link-hover-background-color     : #455A64;
   --nav-link-hover-color                : #F5F5F5;
   --page-nav-link-hover-color           : #FAFAFA;
@@ -16,9 +18,11 @@
   --code-block-color                    : #004D40;
   --comment-input-border-color          : #9E9E9E;
   --comment-input-border-focus-color    : #3c8baf;
+  --sidebar-background-color            : transparent;
+  --sidebar-color                       : inherit;
   --footer-background-color             : transparent;
   --footer-color                        : #212121;
-  --footer-link-color                   : #212121;
+  --footer-link-color                   : var(--footer-color);
   --footer-link-hover-color             : #616161;
 }
 
@@ -51,7 +55,10 @@
 }
 
 body {
-  font-family     : ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Ubuntu", Roboto, "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Ubuntu", Roboto, "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#appwarp {
   background-color: var(--global-background-color);
   color           : var(--global-color);
 }
@@ -72,7 +79,9 @@ a {
 }
 
 header {
-  display: flex;
+  display         : flex;
+  background-color: var(--header-background-color);
+  color           : var(--header-color);
 
   nav {
     flex-grow: 1;
@@ -137,7 +146,7 @@ ol {
 }
 
 main {
-  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 
   article {
     p {
@@ -229,7 +238,7 @@ table {
 .page_box {
   width        : 100%;
   text-align   : center;
-  margin-bottom: 1rem;
+  padding      : 1rem 0;
 
   li {
     a {
@@ -333,9 +342,17 @@ pre {
 }
 
 .sidebar_box {
+  background-color: var(--sidebar-background-color);
+  color           : var(--sidebar-color);
+  width           : 100%;
+  padding         : 1rem 0;
+}
+
+.sidebar {
   font-size      : 0.8rem;
   display        : flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding        : 0 2rem;
 
   ul {
     li {
@@ -349,11 +366,14 @@ pre {
 }
 
 footer {
-  background-color: var(--footer-background-color);
-  color           : var(--footer-color);
-  width           : 100%;
-  margin-top      : 2rem;
-  text-align      : center;
+  background-color   : var(--footer-background-color);
+  color              : var(--footer-color);
+  width              : 100%;
+  padding-top        : 2rem;
+  padding-bottom     : 1rem;
+  text-align         : center;
+  -webkit-align-items: center;
+  align-items        : center;
 
   a {
     color: var(--footer-link-color);

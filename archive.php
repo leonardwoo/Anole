@@ -21,8 +21,10 @@
 <?php endif; ?>
 </main>
 
-<div class="container mx-auto sidebar_box">
-<?php $this->need('sidebar.php'); ?>
-</div>
+<section class="sidebar_box">
+  <div class="container mx-auto sidebar">
+	  <?php $this->need('sidebar.php'); ?>
+	</div>
+</section>
 
 <?php $this->need('footer.php'); ?>
