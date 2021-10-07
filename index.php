@@ -12,17 +12,18 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
 ?>
 
-<main class="container mx-auto posts">
+<main class="container mx-auto posts" role="main">
 <?php while($this->next()): ?>
-    <article class="post">
-	<p class="post_title"><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></p>
+    <article class="post" itemscope>
+	<p class="post_title" itemprop="name headline"><a itemprop="url" href="<?php $this->permalink() ?>"><?php $this->title() ?></a></p>
 	<?php /*
-	<div class="entry_data">
-	     作者： <a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a> ｜ 日期： <?php $this->date('F j, Y'); ?>.
-	    <?php $this->commentsNum('%d 条评论'); ?>.
+	<div class="post_meta">
+	    <span itemprop="author" itemscope>作者： <a href="<?php $this->author->permalink(); ?>"><?php $this->author(); ?></a></span> ｜ 
+		<span>日期： <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>.</span> ｜ 
+        <span itemprop="interactionCount"><?php $this->commentsNum( '%d 条评论' ); ?>.</span>
 	</div>
-	<div class="entry_text">
-	    <?php $this->content( _e('继续阅读...')); ?>
+	<div class="post_content" itemprop="articleBody">
+	    <?php $this->content('继续阅读...'); ?>
 	</div>
 	*/ ?>
     </article>

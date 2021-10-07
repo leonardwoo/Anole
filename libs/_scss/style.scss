@@ -256,7 +256,7 @@ table {
   }
 }
 
-.post-near {
+.post_near {
   margin-top: 1rem;
 
   a {
@@ -346,17 +346,24 @@ pre {
   color           : var(--sidebar-color);
   width           : 100%;
   padding         : 1rem 0;
-}
 
-.sidebar {
-  font-size      : 0.8rem;
-  display        : flex;
-  justify-content: space-between;
-  padding        : 0 2rem;
-
-  ul {
-    li {
-      display: block;
+  .sidebar {
+    font-size      : 0.8rem;
+    display        : flex;
+    justify-content: space-between;
+    padding        : 0 2rem;
+  
+    .post_recent,
+    .post_date,
+    .blog_admin {
+      flex: 1 1 0%;
+    }
+  
+    ul {
+      text-align: center;
+      li {
+        display: block;
+      }
     }
   }
 }
