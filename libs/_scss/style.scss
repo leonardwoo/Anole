@@ -18,6 +18,12 @@
   --code-block-color                    : #004D40;
   --comment-input-border-color          : #9E9E9E;
   --comment-input-border-focus-color    : #3c8baf;
+  --comment-input-background-color      : #FAFAFA;
+  --comment-input-color                 : #212121;
+  --comment-btn-background-color        : #9E9E9E;
+  --comment-btn-color                   : #212121;
+  --comment-btn-hover-background-color  : #90A4AE;
+  --comment-btn-hover-color             : var(--comment-btn-color);
   --sidebar-background-color            : transparent;
   --sidebar-color                       : inherit;
   --footer-background-color             : transparent;
@@ -43,9 +49,15 @@
     --code-block-color                    : #70f3e8;
     --comment-input-border-color          : #9E9E9E;
     --comment-input-border-focus-color    : #14a0e0;
+    --comment-input-background-color      : #424242;
+    --comment-input-color                 : #FAFAFC;
+    --comment-btn-background-color        : #424242;
+    --comment-btn-color                   : #FAFAFC;
+    --comment-btn-hover-background-color  : #546E7A;
+    --comment-btn-hover-color             : var(--comment-btn-color);
     --footer-background-color             : transparent;
     --footer-color                        : #FAFAFC;
-    --footer-link-color                   : #FAFAFC;
+    --footer-link-color                   : var(--footer-color);
     --footer-link-hover-color             : #B0B0B0;
   }
 }
@@ -316,6 +328,8 @@ pre {
     box-shadow           : none;
     appearance           : none;
     padding              : .5rem;
+    background-color     : var(--comment-input-background-color);
+    color                : var(--comment-input-color);
 
     &:focus {
       border-color: var(--comment-input-border-focus-color);
@@ -329,14 +343,16 @@ pre {
     -webkit-border-radius: var(--input-border-radius);
     -moz-border-radius   : var(--input-border-radius);
     border-radius        : var(--input-border-radius);
-    background-color     : #E0E0E0;
+    color                : var(--comment-btn-color);
+    background-color     : var(--comment-btn-background-color);
     padding              : .75rem 1.5rem;
     width                : 100%;
     font-weight          : 400;
 
     &:focus,
     &:hover {
-      background-color: #90A4AE;
+      background-color: var(--comment-btn-hover-background-color);
+      color           : var(--comment-btn-hover-color);
     }
   }
 }
