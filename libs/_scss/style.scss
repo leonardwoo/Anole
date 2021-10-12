@@ -176,20 +176,31 @@ main {
 .post_content {
   margin-top: 2rem;
 
+  // post protect password
   .protected {
+    --protected-border-color              : var(--comment-input-border-color);
+    --protected-input-background-color    : var(--comment-input-background-color);
+    --protected-input-color               : var(--comment-input-color);
+    --protected-btn-background-color      : var(--comment-btn-background-color);
+    --protected-btn-color                 : var(--comment-btn-color);
+    --protected-btn-hover-background-color: var(--comment-btn-hover-background-color);
+    --protected-btn-hover-color           : var(--comment-btn-hover-color);
+
     .text {
       -webkit-border-radius: var(--input-border-radius);
       -moz-border-radius   : var(--input-border-radius);
       border-radius        : var(--input-border-radius);
-      border               : var(--comment-input-border-color) 2px solid;
+      border               : var(--protected-border-color) 2px solid;
       --webkit-box-shadow  : none;
       box-shadow           : none;
       appearance           : none;
       padding              : .15rem .375rem;
       margin-right         : 1rem;
+      background-color     : var(--protected-input-background-color);
+      color                : var(--protected-input-color);
 
       &:focus {
-        border-color: var(--comment-input-border-focus-color);
+        border-color: var(--protected-input-border-focus-color);
         border-style: solid;
         outline     : none;
       }
@@ -200,16 +211,19 @@ main {
       -webkit-border-radius: var(--input-border-radius);
       -moz-border-radius   : var(--input-border-radius);
       border-radius        : var(--input-border-radius);
-      background-color     : #E0E0E0;
+      background-color     : var(--protected-btn-background-color);
+      color                : var(--protected-btn-color);
       padding              : .25rem .75rem;
       font-weight          : 400;
 
       &:focus,
       &:hover {
-        background-color: #90A4AE;
+        background-color: var(--protected-btn-hover-background-color);
+        color           : var(--protected-btn-hover-color);
       }
     }
   }
+
 }
 
 .post_info {
@@ -230,27 +244,36 @@ table {
     }
   }
 
-  th {
-    padding: .25rem;
-  }
-
-  td {
-    padding: .25rem;
-  }
-
   tbody {
     tr {
       &:nth-child(even) {
         background-color: var(--table-body-even-background-color);
       }
+      // &:nth-child(odd) {
+      //   background-color: var(--table-body-odd-background-color);
+      // }
     }
   }
+
+  // --table-border-size : 1px;
+  // --table-border-color: ;
+
+  th {
+    padding: .25rem;
+    // border: var(--table-border-size) solid var(--table-border-color);
+  }
+
+  td {
+    padding: .25rem;
+    // border: var(--table-border-size) solid var(--table-border-color);
+  }
+
 }
 
 .page_box {
-  width        : 100%;
-  text-align   : center;
-  padding      : 1rem 0;
+  width     : 100%;
+  text-align: center;
+  padding   : 1rem 0;
 
   li {
     a {
@@ -368,15 +391,16 @@ pre {
     display        : flex;
     justify-content: space-between;
     padding        : 0 2rem;
-  
+
     .post_recent,
     .post_date,
     .blog_admin {
       flex: 1 1 0%;
     }
-  
+
     ul {
       text-align: center;
+
       li {
         display: block;
       }
