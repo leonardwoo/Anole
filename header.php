@@ -32,7 +32,7 @@
   z-index: 9999;
 }
 .default-text {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   line-height: 24px;
   margin: 10%;
@@ -54,14 +54,14 @@
       </div>
     </div>
   </noscript>
-<div id="appwarp"> <!-- # body start -->
+<div id="app"> <!-- # body start -->
 <header>
   <div class="header_title">
      <p><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></p>
   </div>
   <nav>
-    <div>
-      <ul class="nav_menu">
+    <div class="nav_menu">
+      <ul>
       <?php $this->widget('Widget_Contents_Page_List')
                  ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
       </ul>
