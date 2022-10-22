@@ -19,6 +19,8 @@
     <link rel="proload" href="<?php $this->options->themeUrl('style.css'); ?>" as="style" />
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>" />
 
+    <link rel="proload" href="<?php $this->options->themeUrl('script.js'); ?>" as="script" />
+
     <?php $this->header(); ?>
 
     <style>

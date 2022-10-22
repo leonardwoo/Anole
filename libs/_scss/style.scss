@@ -32,8 +32,7 @@
   --footer-link-hover-color             : #616161;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+.dark {
     --global-background-color             : #212121;
     --global-color                        : #FAFAFC;
     --link-color                          : #FAFAFC;
@@ -59,7 +58,6 @@
     --footer-color                        : #FAFAFC;
     --footer-link-color                   : var(--footer-color);
     --footer-link-hover-color             : #B0B0B0;
-  }
 }
 
 :root {

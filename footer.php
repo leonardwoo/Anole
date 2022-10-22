@@ -10,5 +10,7 @@
 </div> <!-- # body end -->
 
 <?php $this->footer(); ?>
+
+<script src="<?php $this->options->themeUrl('script.js'); ?>"></script>
 </body>
 </html>

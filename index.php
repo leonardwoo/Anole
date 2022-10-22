@@ -4,7 +4,7 @@
  * 
  * @package Anole Theme
  * @author Leonard Woo
- * @version 1.2
+ * @version 1.3
  * @link https://github.com/leonardwoo/Anole
  */
 
