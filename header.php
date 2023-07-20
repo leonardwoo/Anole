@@ -13,13 +13,15 @@
             'author'    =>  _t('%s 发布的文章')
         ), '', ' | '); ?><?php $this->options->title(); ?></title>
 
-    <link rel="proload" href="<?php $this->options->themeUrl('libs/modern-normalize.min.css'); ?>" as="style" />
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('libs/modern-normalize.min.css'); ?>" />
+    <link rel="proload" href="<?php $this->options->themeUrl('libs/sable-normalize.min.css'); ?>" as="style" />
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('libs/sable-normalize.min.css'); ?>" />
 
     <link rel="proload" href="<?php $this->options->themeUrl('style.css'); ?>" as="style" />
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>" />
 
     <link rel="proload" href="<?php $this->options->themeUrl('script.js'); ?>" as="script" />
+
+    <meta name="author" content="<?php $this->author(); ?>">
 
     <?php $this->header(); ?>
 
@@ -56,18 +58,17 @@
       </div>
     </div>
   </noscript>
-<div id="app"> <!-- # body start -->
-<header>
-  <div class="header_title">
-     <p><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></p>
-  </div>
-  <nav>
-    <div class="nav_menu">
-      <ul>
-      <?php $this->widget('Widget_Contents_Page_List')
-                 ->parse('<li><a href="{permalink}">{title}</a></li>'); ?>
-      </ul>
-    </div>
-  </nav>
-</header>
-<div class="main-body"> <!-- # main start -->
+<div id="app" class="w-full"> <!-- # body start -->
+  <div class="min-h-screen flex flex-col">
+    <header>
+      <div class="header_title">
+         <p><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a></p>
+      </div>
+      <nav>
+        <menu class="nav_menu">
+        <?php $this->widget('Widget_Contents_Page_List')
+                   ->parse('<li><a class="select-none" href="{permalink}">{title}</a></li>'); ?>
+        </menu>
+      </nav>
+    </header>
+    <div class="main-body"> <!-- # main start -->

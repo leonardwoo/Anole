@@ -1,8 +1,8 @@
 "use strict";
 
 function isDark() {
-  if ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)')).matches) {
-    return true;
+  if (window.matchMedia('(prefers-color-scheme)').matches) {
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
   }
   return false;
 }

@@ -1,0 +1,187 @@
+h5,
+.h5, h4,
+.h4 {
+  font-weight: 500;
+}
+
+h3,
+.h3, h2,
+.h2, h1,
+.h1 {
+  font-weight: 700;
+}
+
+h3,
+.h3, h2,
+.h2, h1,
+.h1 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h6,
+.h6, h5,
+.h5, h4,
+.h4 {
+  margin: 0;
+  line-height: 1.25;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+.h1 {
+  font-size: 2.75rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.25rem;
+}
+
+h4,
+.h4 {
+  font-size: 2rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.75rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.5rem;
+}
+
+ol, ul {
+  margin-inline: 0;
+  margin-block: 0;
+  padding-inline: 0;
+}
+
+blockquote,
+figure,
+p {
+  margin-inline: 0;
+  margin-block: 0;
+}
+
+blockquote,
+figure {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.15;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  font-size: 0.875rem;
+  line-height: 1.15;
+}
+
+table {
+  border-collapse: collapse;
+}
+table caption {
+  font-size: 0.875rem;
+}
+
+::placeholder,
+::-webkit-input-placeholder {
+	color  : #9CA3AF;
+	opacity: 0.7;
+}
+
+.container {
+  width: 100%;
+}
+@media only screen and (min-width: 640px) {
+  .container {
+    max-width: 615px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 722px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 943px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .container {
+    max-width: 1352px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .container {
+    max-width: 1652px;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .container {
+    max-width: 2151px;
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+$selection-background-color: #212121;
+$selection-color: #fafafc;
+$selection-dark-background-color: $selection-color;
+$selection-dark-color: $selection-background-color;
+
+::selection {
+  background-color: $selection-background-color;
+  color: $selection-color;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background-color: $selection-background-color;
+  color: $selection-color;
+  text-shadow: none;
+}
+
+.dark ::selection {
+  background-color: $selection-dark-background-color;
+  color: $selection-dark-color;
+  text-shadow: none;
+}
+
+.dark ::-moz-selection {
+  background-color: $selection-dark-background-color;
+  color: $selection-dark-color;
+  text-shadow: none;
+}
