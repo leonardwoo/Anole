@@ -142,11 +142,12 @@ nav {
 }
 
 .main-body {
-  min-height: 75vh;
+  flex-grow: 1;
 }
 
 main {
   padding-bottom: 1rem;
+  flex-grow: 1;
 
   article {
     p {
@@ -285,9 +286,20 @@ table {
 
 .post_near {
   margin-top: 1rem;
+  list-style: none;
+
+  li {
+    margin-bottom: .25rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   a {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -408,9 +420,12 @@ footer {
   background-color   : var(--footer-background-color);
   color              : var(--footer-color);
   width              : 100%;
-  padding-top        : 2rem;
-  padding-bottom     : 1rem;
-  text-align         : center;
+
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 
   a {
     color: var(--footer-link-color);

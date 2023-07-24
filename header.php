@@ -71,4 +71,4 @@
         </menu>
       </nav>
     </header>
-    <div class="main-body"> <!-- # main start -->
+    <div class="main-body flex flex-col"> <!-- # main start -->
