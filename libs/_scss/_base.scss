@@ -76,7 +76,8 @@ p {
 
 blockquote,
 figure {
-  margin-bottom: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 p {
@@ -147,6 +148,17 @@ table caption {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-auto {
+  width: auto;
+}
+.w-auto-impor {
+  width: auto !important;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .flex {

@@ -16,6 +16,7 @@
   --table-body-even-background-color    : #E0E0E0;
   --code-block-background-color         : #E0E0E0;
   --code-block-color                    : #004D40;
+  --border-color                        : #D1D9E0;
   --comment-input-border-color          : #9E9E9E;
   --comment-input-border-focus-color    : #3c8baf;
   --comment-input-background-color      : #FAFAFA;
@@ -415,6 +416,12 @@ pre {
 .error-page .post-title {
   text-align: center;
 }
+
+blockquote {
+  padding: 0 1em;
+  border-left: .25em solid var(--border-color);
+}
+
 
 footer {
   background-color   : var(--footer-background-color);
